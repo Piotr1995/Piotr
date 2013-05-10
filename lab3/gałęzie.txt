@@ -1,0 +1,31 @@
+
+a) Zdalne ga³êzie s¹ odnoœnikami do stanu ga³êzi w zdalnym repozytorium. S¹ to lokalne ga³êzie, których nie mo¿na 
+zmieniaæ; s¹ one modyfikowane automatycznie za ka¿dym razem, kiedy wykonujesz jakieœ operacje zdalne. Zdalne 
+ga³êzie zachowuj¹ siê jak zak³adki przypominaj¹ce ci, gdzie znajdowa³y siê ga³êzie w twoim zdalnym repozytorium 
+ostatnim razem, kiedy siê z nim ³¹czy³eœ.
+
+Ich nazwy przybieraj¹ nastêpuj¹c¹ formê: (nazwa zdalnego repozytorium)/(nazwa ga³êzi). Na przyk³ad, gdybyœ 
+chcia³ zobaczyæ, jak wygl¹da ga³¹Ÿ master w zdalnym repozytorium origin z chwili, kiedy po raz ostatni siê z nim 
+komunikowa³eœ, musia³byœ sprawdziæ ga³¹Ÿ origin/master. Jeœli na przyk³ad pracowa³eœ nad zmian¹ wraz z partnerem 
+który wypchn¹³ ga³¹Ÿ iss53, mo¿esz mieæ lokaln¹ ga³¹Ÿ iss53, ale ga³¹Ÿ na serwerze bêdzie wskazywa³a rewizjê 
+znajduj¹c¹ siê pod origin/iss53.
+
+Mo¿e byæ to nieco myl¹ce, wiêc przyjrzyjmy siê dok³adniej przyk³adowi. Powiedzmy, ¿e w swojej sieci masz serwer 
+Git pod adresem git.ourcompany.com. Po sklonowaniu z niego repozytorium, Git automatycznie nazwie je jako 
+origin, pobierze wszystkie dane, stworzy wskaŸnik do miejsca gdzie znajduje siê ga³¹Ÿ master i nazwie j¹ 
+lokalnie origin/master; nie bêdziesz móg³ jej przesuwaæ. Git da ci tak¿e do pracy twoj¹ w³asn¹ ga³¹Ÿ master 
+zaczynaj¹c¹ siê w tym samym miejscu, co zdalna.
+
+b) master
+
+c) head - wskaŸnik pokazuj¹cy na której ga³êzi aktualnie siê znajdujemy.
+
+d) git branch test
+git checkout test
+git checkout master
+git commit -m
+git branch foo
+git checkout foo
+git commit -m "C4"
+git commit -m "C5"
+git merge foo

@@ -1,0 +1,21 @@
+Diagramy sekwencji - opisuj¹ interakcje pomiêdzy czêœciami systemu w postaci sekwencji komunikatów 
+wymienianych miêdzy nimi.
+
+Diagramy sekwencji intuicyjnie prezentuj¹ kolejnoœæ wywo³añ operacji, przep³yw 
+sterowania pomiêdzy obiektami oraz szablon realizowanego algorytmu. Pomijaj¹ natomiast ca³kowicie aspekt 
+dostêpu i operacji na danych, zwi¹zany z komunikacj¹.
+
+Uczestnikami diagramów sekwencji s¹ obiekty, opisane nazw¹ obiektu i jego klas¹, które wymieniaj¹ miêdzy sob¹ 
+komunikaty.
+Diagram sekwencji jest zapisany w prostok¹cie oznaczonym operatorem sd (od angielskiej nazwy diagramu) i 
+sk³ada siê z pionowych linii ¿ycia (ang. lifelines) poszczególnych obiektów uczestnicz¹cych w interakcji oraz 
+wymienianych miêdzy nimi komunikatów (wywo³añ operacji). Bia³e prostok¹ty umieszczone na linii ¿ycia obiektu 
+oznaczaj¹, ¿e obiekt jest zajêty wykonywaniem pewnej czynnoœci (natomiast nie maj¹ bezpoœredniego zwi¹zku z 
+istnieniem obiektu).
+Czas jest reprezentowany w postaci pionowej osi diagramu. Linia ¿ycia obiektu to czas, w którym konkretna 
+instancja obiektu jest w stanie przyjmowaæ komunikaty i wysy³aæ je. Innymi s³owy, obejmuje ona czas istnienia 
+obiektu w systemie.
+Obiekt jest tworzony poprzez wys³anie do niego komunikatu-konstruktora (Bibliotekarz tworzy obiekt klasy Karta 
+Wydawnictwa), natomiast niekoniecznie jest fizycznie usuwany na koñcu linii ¿ycia ? raczej przestaje byæ 
+istotny. Fizycznie usuniêcie obiektu mo¿na wprost oznaczyæ jako znak X na linii ¿ycia (na przyk³ad obiekt 
+Karta wydawnictwa).
